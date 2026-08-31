@@ -1,7 +1,11 @@
 ## I build AI you can actually audit.
 
-Senior software engineer — AI systems & full-stack. Dubai. 15+ years in
-production.
+[![Website](https://img.shields.io/badge/miguelsanchez.co.uk-B45309?logo=firefox&logoColor=white)](https://miguelsanchez.co.uk)
+[![LinkedIn](https://img.shields.io/badge/in%2Fmiguelsanchezduran-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguelsanchezduran)
+![Location](https://img.shields.io/badge/Dubai-6E6E6E)
+![Experience](https://img.shields.io/badge/15%2B_years_in_production-2F6F44)
+
+Senior software engineer · AI systems & full-stack.
 
 AI you can put in front of real decisions: it reasons over retrieved
 sources, shows the evidence and decision trail behind its answer, and knows
@@ -17,18 +21,18 @@ answer.
 | [careful-verifier](https://github.com/m-sanchez/careful-verifier) | The zero-dependency claim verifier behind the live tamper bench. Node and browser, no model calls. |
 | [clean-room-guard](https://github.com/m-sanchez/clean-room-guard) | Pre-publication scanning with a private local denylist that never enters the repository. |
 | [gpu-quiescence](https://github.com/m-sanchez/gpu-quiescence) | Train on the box you serve from: an allocation-readiness handshake for shared VRAM. |
+| [u-pack](https://github.com/m-sanchez/u-pack) | Defeat lost-in-the-middle by construction: fold the strongest context to the prompt's edges. |
 
-Watch one model fail and pass the same question —
+Watch one model fail and pass the same question:
 [five recorded runs and a live tamper bench](https://miguelsanchez.co.uk/careful-machine)
 where you try to trick the verifier in your own browser.
 
 ### In the workshop
 
-`u-pack` — defeat lost-in-the-middle by construction ·
-`silent-zero` — unknown is not zero: proving absence in very large data ·
-`grounded-claims` — verification where the LLM judge is advisory, never
-decisive · `frozen-eval` — evals you cannot quietly bend ·
-`training-forge` — gated self-improvement with promote-or-rollback.
+`silent-zero`: unknown is not zero, proving absence in very large data ·
+`grounded-claims`: verification where the LLM judge is advisory, never
+decisive · `frozen-eval`: evals you cannot quietly bend ·
+`training-forge`: gated self-improvement with promote-or-rollback.
 
 ### Writing
 
