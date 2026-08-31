@@ -24,6 +24,7 @@ answer.
 | [u-pack](https://github.com/m-sanchez/u-pack) | Defeat lost-in-the-middle by construction: fold the strongest context to the prompt's edges. |
 | [silent-zero](https://github.com/m-sanchez/silent-zero) | Unknown is not zero: an eval for proving absence in very large data. Four kinds of zero, one checklist. |
 | [grounded-claims](https://github.com/m-sanchez/grounded-claims) | The verification kit: the LLM judge is structurally advisory, the composer is firewalled by test, every run replays. |
+| [frozen-eval](https://github.com/m-sanchez/frozen-eval) | Evals you cannot quietly bend: corpus and bars frozen in one hash, a hash-chained results ledger. |
 
 Watch one model fail and pass the same question:
 [five recorded runs and a live tamper bench](https://miguelsanchez.co.uk/careful-machine)
@@ -31,7 +32,6 @@ where you try to trick the verifier in your own browser.
 
 ### In the workshop
 
-`frozen-eval`: evals you cannot quietly bend ·
 `training-forge`: gated self-improvement with promote-or-rollback.
 
 ### Writing
