@@ -26,6 +26,8 @@ answer.
 | [grounded-claims](https://github.com/m-sanchez/grounded-claims) | The verification kit: the LLM judge is structurally advisory, the composer is firewalled by test, every run replays. |
 | [frozen-eval](https://github.com/m-sanchez/frozen-eval) | Evals you cannot quietly bend: corpus and bars frozen in one hash, a hash-chained results ledger. |
 | [training-forge](https://github.com/m-sanchez/training-forge) | Gated self-improvement: lessons that must reproduce, an immunity gate that only grows, rollback in one call. |
+| [evidence-gates](https://github.com/m-sanchez/evidence-gates) | Cite-or-refuse for production RAG, enforced in code, not in the prompt. Five gates, first refusal stops. |
+| [tamper-bench](https://github.com/m-sanchez/tamper-bench) | Try to trick it: the guardrail playground as an embeddable widget. Your verifier, the visitor's browser. |
 
 Watch one model fail and pass the same question:
 [five recorded runs and a live tamper bench](https://miguelsanchez.co.uk/careful-machine)
