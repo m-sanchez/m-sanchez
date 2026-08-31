@@ -25,14 +25,11 @@ answer.
 | [silent-zero](https://github.com/m-sanchez/silent-zero) | Unknown is not zero: an eval for proving absence in very large data. Four kinds of zero, one checklist. |
 | [grounded-claims](https://github.com/m-sanchez/grounded-claims) | The verification kit: the LLM judge is structurally advisory, the composer is firewalled by test, every run replays. |
 | [frozen-eval](https://github.com/m-sanchez/frozen-eval) | Evals you cannot quietly bend: corpus and bars frozen in one hash, a hash-chained results ledger. |
+| [training-forge](https://github.com/m-sanchez/training-forge) | Gated self-improvement: lessons that must reproduce, an immunity gate that only grows, rollback in one call. |
 
 Watch one model fail and pass the same question:
 [five recorded runs and a live tamper bench](https://miguelsanchez.co.uk/careful-machine)
 where you try to trick the verifier in your own browser.
-
-### In the workshop
-
-`training-forge`: gated self-improvement with promote-or-rollback.
 
 ### Writing
 
