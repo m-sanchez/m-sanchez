@@ -32,9 +32,10 @@ Machine* (forthcoming, 2026).
 
 ## AI systems toolkit
 
-The tools below were extracted from one body of work and published
-together in August 2026, then hardened into installable, CI-proven
-packages. Each is standalone and zero-dependency.
+The tools below were extracted from one body of work and published in
+2026, then hardened into installable, CI-proven packages. The calibration
+and significance work is standard ML statistics, implemented carefully
+from the public literature. Each tool is standalone and zero-dependency.
 
 **Evidence & verification**
 [evidence-gates](https://github.com/m-sanchez/evidence-gates) ·
@@ -44,6 +45,8 @@ packages. Each is standalone and zero-dependency.
 
 **Evaluation & uncertainty**
 [frozen-eval](https://github.com/m-sanchez/frozen-eval) ·
+[calibrated](https://github.com/m-sanchez/calibrated) ·
+[ab-significance](https://github.com/m-sanchez/ab-significance) ·
 [silent-zero](https://github.com/m-sanchez/silent-zero) ·
 [u-pack](https://github.com/m-sanchez/u-pack)
 
