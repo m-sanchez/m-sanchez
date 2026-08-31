@@ -26,7 +26,7 @@ allowlist, no shell endpoint). Zero runtime dependencies, real CI.
 The reference architecture for the pattern the tools below share: a model
 proposes, deterministic components certify, and the design principles are
 executable invariants. Contract, authority, capability, scope, evidence,
-claim, certification-or-refusal, narration, replay — each a boundary you
+claim, certification-or-refusal, narration, replay - each a boundary you
 can locate in the types and the tests. Companion code for *The Careful
 Machine* (forthcoming, 2026).
 
@@ -41,14 +41,18 @@ from the public literature. Each tool is standalone and zero-dependency.
 [evidence-gates](https://github.com/m-sanchez/evidence-gates) ·
 [grounded-claims](https://github.com/m-sanchez/grounded-claims) ·
 [careful-verifier](https://github.com/m-sanchez/careful-verifier) ·
-[tamper-bench](https://github.com/m-sanchez/tamper-bench)
-
-**Evaluation & uncertainty**
-[frozen-eval](https://github.com/m-sanchez/frozen-eval) ·
-[calibrated](https://github.com/m-sanchez/calibrated) ·
-[ab-significance](https://github.com/m-sanchez/ab-significance) ·
-[silent-zero](https://github.com/m-sanchez/silent-zero) ·
+[tamper-bench](https://github.com/m-sanchez/tamper-bench) ·
 [u-pack](https://github.com/m-sanchez/u-pack)
+
+**ML evaluation & calibration**
+[calibrated](https://github.com/m-sanchez/calibrated) - is the model's
+confidence honest (ECE, Brier, temperature scaling) ·
+[ab-significance](https://github.com/m-sanchez/ab-significance) - did B
+really beat A (paired McNemar + bootstrap) ·
+[probe-heads](https://github.com/m-sanchez/probe-heads) - reproducible
+probing with train/val/holdout hygiene ·
+[frozen-eval](https://github.com/m-sanchez/frozen-eval) ·
+[silent-zero](https://github.com/m-sanchez/silent-zero)
 
 **Runtime & process controls**
 [careful-router](https://github.com/m-sanchez/careful-router) ·
