@@ -32,7 +32,7 @@ work; the ML-evaluation utilities are fresh implementations of standard
 methods, written to test the same systems more rigorously. Published
 together, in a short burst in 2026.
 
-Thirteen of them are on npm under the `@m-sanchez` scope:
+Eleven of them are on npm under the `@m-sanchez` scope:
 
 ```bash
 npm install @m-sanchez/<name>
@@ -41,12 +41,21 @@ npm install @m-sanchez/<name>
 `gpu-quiescence` is Python: `pip install gpu-quiescence`. Every repo also
 has tagged releases if you would rather pin to git.
 
+Every package carries a `CLAIMS.md`: each falsifiable claim on its README
+mapped to the test that enforces it. If a claim has no test, it does not
+stay on the README.
+
 **Evidence & verification**
-[evidence-gates](https://github.com/m-sanchez/evidence-gates) ·
-[grounded-claims](https://github.com/m-sanchez/grounded-claims) ·
-[careful-verifier](https://github.com/m-sanchez/careful-verifier) ·
-[tamper-bench](https://github.com/m-sanchez/tamper-bench) ·
+[grounded-claims](https://github.com/m-sanchez/grounded-claims) - the
+verification kit: a check chain where the LLM judge is structurally
+advisory, plus the turn-level gates ·
+[careful-verifier](https://github.com/m-sanchez/careful-verifier) -
+browser-safe claim verification, and the tamper bench that drives the
+[live demo](https://miguelsanchez.co.uk/careful-machine) ·
 [u-pack](https://github.com/m-sanchez/u-pack)
+
+*(`evidence-gates` was absorbed into grounded-claims, and `tamper-bench`
+into careful-verifier, in the 2026-09-01 hardening pass. Both archived.)*
 
 **ML evaluation & calibration**
 [calibrated](https://github.com/m-sanchez/calibrated) - is the model's
