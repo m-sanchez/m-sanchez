@@ -32,6 +32,15 @@ work; the ML-evaluation utilities are fresh implementations of standard
 methods, written to test the same systems more rigorously. Published
 together, in a short burst in 2026.
 
+Thirteen of them are on npm under the `@m-sanchez` scope:
+
+```bash
+npm install @m-sanchez/<name>
+```
+
+`gpu-quiescence` is Python and installs from its tag; every repo also has
+tagged releases if you would rather pin to git.
+
 **Evidence & verification**
 [evidence-gates](https://github.com/m-sanchez/evidence-gates) ·
 [grounded-claims](https://github.com/m-sanchez/grounded-claims) ·
