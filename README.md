@@ -4,9 +4,9 @@
 [![LinkedIn](https://img.shields.io/badge/in%2Fmiguelsanchezduran-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguelsanchezduran)
 ![Location](https://img.shields.io/badge/Dubai-6E6E6E)
 
-Software engineer, 15 years in production, now working on AI systems that
-decide in code rather than in the prompt: they reason over retrieved
-sources, show their working, and decline when they should.
+Senior software engineer, 15+ years in production, now working on AI
+systems that decide in code rather than in the prompt: they reason over
+retrieved sources, show their working, and decline when they should.
 
 ## Start here
 
@@ -74,6 +74,8 @@ runs and a tamper bench you can try in your browser.
 - [The Silent Zero: Proving Absence in Very Large Data](https://miguelsanchez.co.uk/writing/the-silent-zero-proving-absence/)
 - [Designing Evidence Gates for Production LLM Systems](https://miguelsanchez.co.uk/writing/evidence-gates-production-llms/)
 - [How I Evaluate Production RAG Systems](https://miguelsanchez.co.uk/writing/evaluating-production-rag/)
+- [Building Reliable Agentic AI Systems](https://miguelsanchez.co.uk/writing/reliable-agentic-ai-systems/)
+- [What 15 Years of Software Engineering Taught Me About AI Engineering](https://miguelsanchez.co.uk/writing/software-engineering-lessons-for-ai/)
 
 ---
 
