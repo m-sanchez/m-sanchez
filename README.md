@@ -1,10 +1,10 @@
-## I build AI you can audit
+## Hello there!
 
 [![Website](https://img.shields.io/badge/miguelsanchez.co.uk-B45309?logo=firefox&logoColor=white)](https://miguelsanchez.co.uk)
 [![LinkedIn](https://img.shields.io/badge/in%2Fmiguelsanchezduran-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguelsanchezduran)
 ![Location](https://img.shields.io/badge/Dubai-6E6E6E)
 
-Senior software engineer, 15+ years in production, now working on AI
+I am a Senior software engineer, 15+ years in production, now working on AI
 systems that decide in code rather than in the prompt: they reason over
 retrieved sources, show their working, and decline when they should.
 
