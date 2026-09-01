@@ -60,6 +60,18 @@ probing with train/val/holdout hygiene ·
 [training-forge](https://github.com/m-sanchez/training-forge) ·
 [clean-room-guard](https://github.com/m-sanchez/clean-room-guard)
 
+### Worked together
+
+**[routing-study](https://github.com/m-sanchez/routing-study)** composes
+four of the tools into one reproducible experiment: careful-router routes
+to specialists, frozen-eval freezes the pass bars before the run,
+ab-significance tests whether routing's win is real, and calibrated checks
+the result's confidence. The finding is the kind an accuracy number alone
+would miss - routing lifts accuracy past the ship bar (significant,
++5.7pp) but fails the calibration bar, because the narrow specialists are
+overconfident. The tools are real pinned dependencies, so the repo also
+proves they install and compose.
+
 Watch one model fail and pass the same question:
 [five recorded runs and a live tamper bench](https://miguelsanchez.co.uk/careful-machine)
 where you try to trick the verifier in your own browser.
