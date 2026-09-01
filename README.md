@@ -38,8 +38,8 @@ Thirteen of them are on npm under the `@m-sanchez` scope:
 npm install @m-sanchez/<name>
 ```
 
-`gpu-quiescence` is Python and installs from its tag; every repo also has
-tagged releases if you would rather pin to git.
+`gpu-quiescence` is Python: `pip install gpu-quiescence`. Every repo also
+has tagged releases if you would rather pin to git.
 
 **Evidence & verification**
 [evidence-gates](https://github.com/m-sanchez/evidence-gates) ·
