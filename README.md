@@ -1,41 +1,33 @@
-## I build AI you can actually audit.
+## I build AI you can audit
 
 [![Website](https://img.shields.io/badge/miguelsanchez.co.uk-B45309?logo=firefox&logoColor=white)](https://miguelsanchez.co.uk)
 [![LinkedIn](https://img.shields.io/badge/in%2Fmiguelsanchezduran-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguelsanchezduran)
 ![Location](https://img.shields.io/badge/Dubai-6E6E6E)
-![Experience](https://img.shields.io/badge/15%2B_years_in_production-2F6F44)
 
-Senior software engineer building production AI systems where models
-propose and software decides what can ship. Fifteen years of systems
-engineering under the AI work: architecture, correctness, failure modes,
-security, testing, operability.
+Software engineer, 15 years in production, now working on AI systems that
+decide in code rather than in the prompt: they reason over retrieved
+sources, show their working, and decline when they should.
 
-## Flagships
+## Start here
 
 ### [clawdeck](https://github.com/m-sanchez/clawdeck)
 
-A complete local developer tool: event ingestion with a durable spool and
-idempotent replay, a single-writer leased store, SSE streaming, process
-lifecycle with PID-ownership checks, OTEL telemetry, GitHub/GitLab
-connectors that degrade instead of crashing, and a loopback security
-boundary (per-launch bearer, anti-rebinding Host checks, a named-action
-allowlist, no shell endpoint). Zero runtime dependencies, real CI.
+A local dashboard for Claude Code: sessions, events, cost, worktrees and
+reviews in one loopback web app. No build step, zero dependencies, and a
+real security boundary (per-launch token, Host checks, an action
+allowlist, no shell endpoint). A complete developer tool, not a snippet.
 
 ### [careful-machine-reference](https://github.com/m-sanchez/careful-machine-reference)
 
-The reference architecture for the pattern the tools below share: a model
-proposes, deterministic components certify, and the design principles are
-executable invariants. Contract, authority, capability, scope, evidence,
-claim, certification-or-refusal, narration, replay - each a boundary you
-can locate in the types and the tests. Companion code for *The Careful
-Machine* (forthcoming, 2026).
+A small reference implementation of the pattern the tools below share: the
+model proposes, deterministic code certifies, and each design rule is a
+test you can run. Companion code for *The Careful Machine* (forthcoming,
+2026).
 
-## AI systems toolkit
+## The tools
 
-The tools below were extracted from one body of work and published in
-2026, then hardened into installable, CI-proven packages. The calibration
-and significance work is standard ML statistics, implemented carefully
-from the public literature. Each tool is standalone and zero-dependency.
+Small standalone packages, zero dependencies, one job each. Published
+together in 2026, with tests and CI.
 
 **Evidence & verification**
 [evidence-gates](https://github.com/m-sanchez/evidence-gates) ·
@@ -46,11 +38,11 @@ from the public literature. Each tool is standalone and zero-dependency.
 
 **ML evaluation & calibration**
 [calibrated](https://github.com/m-sanchez/calibrated) - is the model's
-confidence honest (ECE, Brier, temperature scaling) ·
+confidence honest? (ECE, Brier, temperature scaling) ·
 [ab-significance](https://github.com/m-sanchez/ab-significance) - did B
-really beat A (paired McNemar + bootstrap) ·
-[probe-heads](https://github.com/m-sanchez/probe-heads) - reproducible
-probing with train/val/holdout hygiene ·
+beat A, or is it noise? (paired McNemar + bootstrap) ·
+[probe-heads](https://github.com/m-sanchez/probe-heads) - probing with
+train/val/holdout hygiene ·
 [frozen-eval](https://github.com/m-sanchez/frozen-eval) ·
 [silent-zero](https://github.com/m-sanchez/silent-zero)
 
@@ -60,21 +52,16 @@ probing with train/val/holdout hygiene ·
 [training-forge](https://github.com/m-sanchez/training-forge) ·
 [clean-room-guard](https://github.com/m-sanchez/clean-room-guard)
 
-### Worked together
+[routing-study](https://github.com/m-sanchez/routing-study) puts four of
+them together in one reproducible experiment: route to specialists, freeze
+the bars, test the win, check the confidence. It finds that routing
+improved accuracy but left the system overconfident - the kind of trade an
+accuracy number alone would hide. The tools are real dependencies there,
+so it also shows they install and compose.
 
-**[routing-study](https://github.com/m-sanchez/routing-study)** composes
-four of the tools into one reproducible experiment: careful-router routes
-to specialists, frozen-eval freezes the pass bars before the run,
-ab-significance tests whether routing's win is real, and calibrated checks
-the result's confidence. The finding is the kind an accuracy number alone
-would miss - routing lifts accuracy past the ship bar (significant,
-+5.7pp) but fails the calibration bar, because the narrow specialists are
-overconfident. The tools are real pinned dependencies, so the repo also
-proves they install and compose.
-
-Watch one model fail and pass the same question:
-[five recorded runs and a live tamper bench](https://miguelsanchez.co.uk/careful-machine)
-where you try to trick the verifier in your own browser.
+You can also [watch one model fail and pass the same
+question](https://miguelsanchez.co.uk/careful-machine) - five recorded
+runs and a tamper bench you can try in your browser.
 
 ## Writing
 
@@ -83,12 +70,6 @@ where you try to trick the verifier in your own browser.
 - [Designing Evidence Gates for Production LLM Systems](https://miguelsanchez.co.uk/writing/evidence-gates-production-llms/)
 - [How I Evaluate Production RAG Systems](https://miguelsanchez.co.uk/writing/evaluating-production-rag/)
 
-## Working rules
-
-Evidence before confidence · a person owns the decision · least data,
-shortest time. The full set, each with the control that enforces it:
-[miguelsanchez.co.uk/ethics](https://miguelsanchez.co.uk/ethics)
-
 ---
 
-[miguelsanchez.co.uk](https://miguelsanchez.co.uk) · contact@miguelsanchez.co.uk
+[miguelsanchez.co.uk](https://miguelsanchez.co.uk) · contact@miguelsanchez.co.uk · Dubai
