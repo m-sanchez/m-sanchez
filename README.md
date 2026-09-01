@@ -26,8 +26,11 @@ test you can run. Companion code for *The Careful Machine* (forthcoming,
 
 ## The tools
 
-Small standalone packages, zero dependencies, one job each. Published
-together in 2026, with tests and CI.
+Small standalone packages, zero dependencies, one job each, with tests and
+CI. The reliability and control tools came out of one body of production
+work; the ML-evaluation utilities are fresh implementations of standard
+methods, written to test the same systems more rigorously. Published
+together, in a short burst in 2026.
 
 **Evidence & verification**
 [evidence-gates](https://github.com/m-sanchez/evidence-gates) ·
@@ -54,10 +57,12 @@ train/val/holdout hygiene ·
 
 [routing-study](https://github.com/m-sanchez/routing-study) puts four of
 them together in one reproducible experiment: route to specialists, freeze
-the bars, test the win, check the confidence. It finds that routing
-improved accuracy but left the system overconfident - the kind of trade an
-accuracy number alone would hide. The tools are real dependencies there,
-so it also shows they install and compose.
+the bars, test the win, check the confidence. It is a controlled synthetic
+study - the harness deliberately includes overconfident specialists - that
+shows why routing has to be evaluated on calibration as well as accuracy:
+the eval catches a system that clears the accuracy bar while failing
+calibration. The tools are real pinned dependencies there, so it also
+shows they install and compose.
 
 You can also [watch one model fail and pass the same
 question](https://miguelsanchez.co.uk/careful-machine) - five recorded
