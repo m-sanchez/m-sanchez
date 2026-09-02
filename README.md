@@ -38,22 +38,12 @@ Eleven of them are on npm under the `@m-sanchez` scope:
 npm install @m-sanchez/<name>
 ```
 
-`gpu-quiescence` is Python: `pip install gpu-quiescence`. Every repo also
-has tagged releases if you would rather pin to git.
+`gpu-quiescence` is Python: `pip install gpu-quiescence`. Every package
+also has tagged releases if you would rather pin to git.
 
 Every package carries a `CLAIMS.md`: each falsifiable claim on its README
 mapped to the test that enforces it. If a claim has no test, it does not
 stay on the README.
-
-## What you can rerun
-
-| Repo | Command | What it pins | Ends with | Time |
-|---|---|---|---|---|
-| [routing-study](https://github.com/m-sanchez/routing-study) | `git clone https://github.com/m-sanchez/routing-study && cd routing-study && npm ci && npm test && npm run study` | `test/pinned.test.ts` (the per-domain table: timeline 208/300 for both systems) and `test/study.test.ts` (the dispatch invariant) | `     timeline: 69.3% and 69.3% are identical by construction` | about 29 s |
-| [calibrated](https://github.com/m-sanchez/calibrated) | `git clone https://github.com/m-sanchez/calibrated && cd calibrated && npm ci && npm test && npm run demo` | `test/claims.test.ts` (runs the demo and matches its lines) | `after (T=4.45)         ECE 0.006   Brier 0.204   accuracy 71.6%` | about 11 s |
-
-Times are from one laptop; every 'Ends with' line is asserted by a test
-in that repo, so a different line is a bug report.
 
 **Evidence & verification**
 [grounded-claims](https://github.com/m-sanchez/grounded-claims) - the
@@ -97,6 +87,18 @@ yet recorded; when it is, the table lands in that README.
 You can also [watch one model fail and pass the same
 question](https://miguelsanchez.co.uk/careful-machine) - five recorded
 runs and a tamper bench you can try in your browser.
+
+## What you can rerun
+
+| Repo | Command | What it pins | Prints | Time |
+|---|---|---|---|---|
+| [routing-study](https://github.com/m-sanchez/routing-study) | `git clone https://github.com/m-sanchez/routing-study && cd routing-study && npm ci && npm test && npm run study` | `test/pinned.test.ts` (the per-domain table: timeline 208/300 for both systems) and `test/study.test.ts` (the dispatch invariant) | `     timeline: 69.3% and 69.3% are identical by construction` | about 29 s |
+| [calibrated](https://github.com/m-sanchez/calibrated) | `git clone https://github.com/m-sanchez/calibrated && cd calibrated && npm ci && npm test && npm run demo` | `test/claims.test.ts` (runs the demo and matches its lines) | `after (T=4.45)         ECE 0.006   Brier 0.204   accuracy 71.6%` | about 11 s |
+
+Times are from one laptop and cover the npm steps, not the clone. The
+calibrated line is matched as printed by `test/claims.test.ts`; the
+routing-study line is rendered from figures that `test/pinned.test.ts`
+pins, so a different line is a bug report either way.
 
 ## Using one of these?
 
