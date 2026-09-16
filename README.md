@@ -10,12 +10,15 @@ retrieved sources, show their working, and decline when they should.
 
 ## Start here
 
-### [clawdeck](https://github.com/m-sanchez/clawdeck)
+### [Ocelin](https://github.com/m-sanchez/clawdeck)
 
-A local dashboard for Claude Code: sessions, events, cost, worktrees and
-reviews in one loopback web app. No build step, zero dependencies, and a
-real security boundary (per-launch token, Host checks, an action
-allowlist, no shell endpoint). A complete developer tool, not a snippet.
+A local companion for Codex and Claude Code, formerly Clawdeck. Choose a
+Windows tray panel, floating session bar, full dashboard, or all three.
+The browser core keeps zero runtime dependencies and its loopback security
+boundary; the optional Windows app bundles its own runtime.
+
+[Meet the pixel ocelot](https://miguelsanchez.co.uk/ocelin/) ·
+[Windows preview and browser downloads](https://github.com/m-sanchez/clawdeck/releases)
 
 ### [careful-machine-reference](https://github.com/m-sanchez/careful-machine-reference)
 
