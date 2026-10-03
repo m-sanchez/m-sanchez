@@ -1,129 +1,59 @@
-## Hello there!
+# Miguel Sánchez Durán
 
-[![Website](https://img.shields.io/badge/miguelsanchez.co.uk-B45309?logo=firefox&logoColor=white)](https://miguelsanchez.co.uk)
-[![LinkedIn](https://img.shields.io/badge/in%2Fmiguelsanchezduran-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguelsanchezduran)
-![Location](https://img.shields.io/badge/Dubai-6E6E6E)
+Senior software engineer in Dubai, with 15+ years of production experience. I build full-stack applications and applied AI tools, with a focus on evaluation, usable interfaces, and reproducible results.
 
-I am a Senior software engineer, 15+ years in production, now working on AI
-systems that decide in code rather than in the prompt: they reason over
-retrieved sources, show their working, and decline when they should.
+[Website](https://miguelsanchez.co.uk) · [LinkedIn](https://www.linkedin.com/in/miguelsanchezduran/) · [Writing](https://miguelsanchez.co.uk/writing/)
 
-## Start here
+## Featured work
 
-### [Ocelin](https://github.com/m-sanchez/clawdeck)
+### [Calibration Explorer](https://github.com/m-sanchez/calibration-explorer)
 
-A local companion for Codex and Claude Code, formerly Clawdeck. Choose a
-Windows tray panel, floating session bar, full dashboard, or all three.
-The browser core keeps zero runtime dependencies and its loopback security
-boundary; the optional Windows app bundles its own runtime.
+Check whether a classifier's confidence matches how often it is correct. Import prediction files, keep calibration, policy-validation, and test rows separate, and export an HTML report, experiment JSON, or prediction CSV.
 
-[Meet the pixel ocelot](https://miguelsanchez.co.uk/ocelin/) ·
-[Windows preview and browser downloads](https://github.com/m-sanchez/clawdeck/releases)
+The recorded UCI digits example retains all 1,797 original test rows. Temperature scaling leaves accuracy at 94.88% and reduces test negative log-likelihood from 0.17595 to 0.15753. This is one reference result, not a guarantee for other data. Confidence-only CSV inputs support measurement; fitting needs logits and known labels.
 
-### [careful-machine-reference](https://github.com/m-sanchez/careful-machine-reference)
+[Open the app](https://huggingface.co/spaces/m-sanchez/calibration-explorer) · [Website copy](https://miguelsanchez.co.uk/calibration-explorer/) · [Recorded evidence](https://github.com/m-sanchez/calibration-explorer/tree/v0.1.0/review)
 
-A small reference implementation of the pattern the tools below share: the
-model proposes, deterministic code certifies, and each design rule is a
-test you can run. Companion code for *The Careful Machine* (forthcoming,
-2026).
+### [Ocelin](https://github.com/m-sanchez/ocelin)
 
-## The tools
+A local companion for Codex and Claude Code: find sessions across projects, inspect their history, and resume the intended conversation. It has a browser interface and an optional Windows app. Preview releases are labelled; the optional Ask Ocelin feature sends a compact snapshot to the configured model.
 
-Small standalone packages, zero dependencies, one job each, with tests and
-CI. The reliability and control tools came out of one body of production
-work; the ML-evaluation utilities are fresh implementations of standard
-methods, written to test the same systems more rigorously. Published
-together, in a short burst in 2026.
+[See the workflow](https://miguelsanchez.co.uk/ocelin/) · [Downloads and release notes](https://github.com/m-sanchez/ocelin/releases)
 
-Eleven of them are on npm under the `@m-sanchez` scope:
+### [Recorded routing study](https://github.com/m-sanchez/routing-study#the-real-model-arm)
 
-```bash
-npm install @m-sanchez/<name>
-```
+In one recorded comparison using Claude Haiku 4.5, domain-specific prompting reduced accuracy from 82.75% to 67.75%. The 400 scored questions contain 372 distinct questions. The transcript and replay are public; this result does not establish that routing fails generally.
 
-`gpu-quiescence` is Python: `pip install gpu-quiescence`. Every package
-also has tagged releases if you would rather pin to git.
+## Inspect and reproduce
 
-Every package carries a `CLAIMS.md`: each falsifiable claim on its README
-mapped to the test that enforces it. If a claim has no test, it does not
-stay on the README.
+| Project | Evidence and reproduction |
+| --- | --- |
+| Calibration Explorer | [Tagged source, setup, reference provenance, and replay instructions](https://github.com/m-sanchez/calibration-explorer/tree/v0.1.0) |
+| calibrated | [Numerical corrections and distribution status for v2.0.1](https://github.com/m-sanchez/calibrated/releases/tag/v2.0.1) |
+| Routing study | [Recorded model transcript and replay](https://github.com/m-sanchez/routing-study#the-real-model-arm), alongside a separately labelled synthetic study |
+| Careful Machine | [Public reference implementation](https://github.com/m-sanchez/careful-machine-reference) and [interactive evidence demo](https://miguelsanchez.co.uk/careful-machine) |
 
-**Evidence & verification**
-[grounded-claims](https://github.com/m-sanchez/grounded-claims) - the
-verification kit: a check chain where the LLM judge is structurally
-advisory, plus the turn-level gates ·
-[careful-verifier](https://github.com/m-sanchez/careful-verifier) -
-browser-safe claim verification, and the tamper bench that drives the
-[live demo](https://miguelsanchez.co.uk/careful-machine) ·
-[u-pack](https://github.com/m-sanchez/u-pack)
+The Careful Machine repository illustrates an approach with public reference code and synthetic examples. It is not my employer's production system. Reproducing recorded output establishes repeatability; correctness and generalisation need additional evidence.
 
-*(evidence-gates and tamper-bench were folded into grounded-claims and
-careful-verifier on 2026-09-01; both archived, history intact.)*
+<details>
+<summary>Smaller libraries and engineering tools</summary>
 
-**ML evaluation & calibration**
-[calibrated](https://github.com/m-sanchez/calibrated) - is the model's
-confidence honest? (ECE, Brier, temperature scaling) ·
-[ab-significance](https://github.com/m-sanchez/ab-significance) - did B
-beat A, or is it noise? (paired McNemar + bootstrap) ·
-[probe-heads](https://github.com/m-sanchez/probe-heads) - probing with
-train/val/holdout hygiene ·
-[frozen-eval](https://github.com/m-sanchez/frozen-eval) ·
-[silent-zero](https://github.com/m-sanchez/silent-zero)
+These repositories contain focused utilities with their own installation instructions, tests, and limitations.
 
-**Runtime & process controls**
-[careful-router](https://github.com/m-sanchez/careful-router) ·
-[gpu-quiescence](https://github.com/m-sanchez/gpu-quiescence) ·
-[training-forge](https://github.com/m-sanchez/training-forge) ·
-[clean-room-guard](https://github.com/m-sanchez/clean-room-guard)
+- **Evidence and verification:** [grounded-claims](https://github.com/m-sanchez/grounded-claims), [careful-verifier](https://github.com/m-sanchez/careful-verifier), [u-pack](https://github.com/m-sanchez/u-pack).
+- **Evaluation and calibration:** [calibrated](https://github.com/m-sanchez/calibrated), [ab-significance](https://github.com/m-sanchez/ab-significance), [probe-heads](https://github.com/m-sanchez/probe-heads), [frozen-eval](https://github.com/m-sanchez/frozen-eval), [silent-zero](https://github.com/m-sanchez/silent-zero).
+- **Runtime and process controls:** [careful-router](https://github.com/m-sanchez/careful-router), [gpu-quiescence](https://github.com/m-sanchez/gpu-quiescence), [training-forge](https://github.com/m-sanchez/training-forge), [clean-room-guard](https://github.com/m-sanchez/clean-room-guard).
 
-[routing-study](https://github.com/m-sanchez/routing-study) puts four of
-them together in one reproducible experiment: route to specialists, freeze
-the bars, test the win, check the confidence. It is a controlled synthetic
-study - the harness deliberately includes overconfident specialists - that
-shows why routing has to be evaluated on calibration as well as accuracy:
-the eval catches a system that clears the accuracy bar while failing
-calibration. The tools are real pinned dependencies there, so it also
-shows they install and compose. A real-model arm was recorded on
-2026-09-02: 400 questions to claude-haiku-4-5, and routing lost by 15
-points, with calibration worse too. The transcript is committed, so the
-table in that README is the one a replay reproduces rather than one I
-typed.
-
-You can also [watch one model fail and pass the same
-question](https://miguelsanchez.co.uk/careful-machine) - five recorded
-runs and a tamper bench you can try in your browser.
-
-## What you can rerun
-
-| Repo | Command | What it pins | Prints | Time |
-|---|---|---|---|---|
-| [routing-study](https://github.com/m-sanchez/routing-study) | `git clone https://github.com/m-sanchez/routing-study && cd routing-study && npm ci && npm test && npm run study` | `test/pinned.test.ts` (the per-domain table: timeline 208/300 for both systems) and `test/study.test.ts` (the dispatch invariant) | `     timeline: 69.3% and 69.3% are identical by construction` | about 29 s |
-| [calibrated](https://github.com/m-sanchez/calibrated) | `git clone https://github.com/m-sanchez/calibrated && cd calibrated && npm ci && npm test && npm run demo` | `test/claims.test.ts` (runs the demo and matches its lines) | `after (T=4.45)         ECE 0.006   Brier 0.204   accuracy 71.6%` | about 11 s |
-| [routing-study](https://github.com/m-sanchez/routing-study) | `git clone https://github.com/m-sanchez/routing-study && cd routing-study && npm ci && npm run real` | `test/real.test.ts` (the replay is held to the pinned summary and to the sha256 of the transcript) | `ab-significance: on the 400 examples both models scored: A 82.8%, B 67.8%; McNemar p=0.0000, B-A -15.0pp [-19.8, -10.3]. A is better, beyond noise and beyond the declared bar.` | about 41 s |
-
-Times are from one laptop; the last row includes the clone, the other two
-cover the npm steps only. The calibrated line is matched as printed by
-`test/claims.test.ts`; the routing-study lines are rendered from figures
-pinned by `test/pinned.test.ts` and `test/real.test.ts`. A different line is
-a bug report either way. The real-model arm replays from a committed
-transcript, so it needs no API key and spends nothing.
-
-## Using one of these?
-
-These are weeks old. If one of them earns a place in your build, or fails
-to, an issue on the repo is the feedback I most want. Every package has
-tagged releases and an install-proof job, so what you get from the
-registry is what the tests ran against.
+</details>
 
 ## Writing
 
+- [Accuracy stayed the same. Confidence changed.](https://miguelsanchez.co.uk/writing/calibration-explorer-accuracy-and-confidence/)
+
 - [Building AI That Cites or Refuses](https://miguelsanchez.co.uk/writing/building-ai-that-cites-or-refuses/)
-- [The Silent Zero: Proving Absence in Very Large Data](https://miguelsanchez.co.uk/writing/the-silent-zero-proving-absence/)
-- [Designing Evidence Gates for Production LLM Systems](https://miguelsanchez.co.uk/writing/evidence-gates-production-llms/)
 - [How I Evaluate Production RAG Systems](https://miguelsanchez.co.uk/writing/evaluating-production-rag/)
-- [Building Reliable Agentic AI Systems](https://miguelsanchez.co.uk/writing/reliable-agentic-ai-systems/)
 - [What 15 Years of Software Engineering Taught Me About AI Engineering](https://miguelsanchez.co.uk/writing/software-engineering-lessons-for-ai/)
 
----
+If you try a project, an issue describing the task, release, and point of confusion is useful feedback. Please omit private inputs and credentials.
 
 [miguelsanchez.co.uk](https://miguelsanchez.co.uk) · contact@miguelsanchez.co.uk · Dubai
