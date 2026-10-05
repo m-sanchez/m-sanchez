@@ -12,7 +12,7 @@ Check whether a classifier's confidence matches how often it is correct. Import 
 
 The recorded UCI digits example retains all 1,797 original test rows. Temperature scaling leaves accuracy at 94.88% and reduces test negative log-likelihood from 0.17595 to 0.15753. This is one reference result, not a guarantee for other data. Confidence-only CSV inputs support measurement; fitting needs logits and known labels.
 
-[Open the app](https://huggingface.co/spaces/m-sanchez/calibration-explorer) · [Website copy](https://miguelsanchez.co.uk/calibration-explorer/) · [Recorded evidence](https://github.com/m-sanchez/calibration-explorer/tree/v0.1.0/review)
+[Open the app](https://huggingface.co/spaces/m-sanchez/calibration-explorer) · [Website copy](https://miguelsanchez.co.uk/calibration-explorer/) · [Recorded evidence](https://github.com/m-sanchez/calibration-explorer/tree/v0.2.0/review)
 
 ### [Ocelin](https://github.com/m-sanchez/ocelin)
 
@@ -28,10 +28,10 @@ In one recorded comparison using Claude Haiku 4.5, domain-specific prompting red
 
 | Project | Evidence and reproduction |
 | --- | --- |
-| Calibration Explorer | [Tagged source, setup, reference provenance, and replay instructions](https://github.com/m-sanchez/calibration-explorer/tree/v0.1.0) |
+| Calibration Explorer | [Tagged source, setup, reference provenance, and replay instructions](https://github.com/m-sanchez/calibration-explorer/tree/v0.2.0) |
 | calibrated | [Numerical corrections and distribution status for v2.0.1](https://github.com/m-sanchez/calibrated/releases/tag/v2.0.1) |
 | Routing study | [Recorded model transcript and replay](https://github.com/m-sanchez/routing-study#the-real-model-arm), alongside a separately labelled synthetic study |
-| Careful Machine | [Public reference implementation](https://github.com/m-sanchez/careful-machine-reference) and [interactive evidence demo](https://miguelsanchez.co.uk/careful-machine) |
+| Careful Machine | [Public reference implementation](https://github.com/m-sanchez/careful-machine-reference) and [interactive evidence demo](https://miguelsanchez.co.uk/careful-machine/) |
 
 The Careful Machine repository illustrates an approach with public reference code and synthetic examples. It is not my employer's production system. Reproducing recorded output establishes repeatability; correctness and generalisation need additional evidence.
 
@@ -49,7 +49,6 @@ These repositories contain focused utilities with their own installation instruc
 ## Writing
 
 - [Accuracy stayed the same. Confidence changed.](https://miguelsanchez.co.uk/writing/calibration-explorer-accuracy-and-confidence/)
-
 - [Building AI That Cites or Refuses](https://miguelsanchez.co.uk/writing/building-ai-that-cites-or-refuses/)
 - [How I Evaluate Production RAG Systems](https://miguelsanchez.co.uk/writing/evaluating-production-rag/)
 - [What 15 Years of Software Engineering Taught Me About AI Engineering](https://miguelsanchez.co.uk/writing/software-engineering-lessons-for-ai/)
