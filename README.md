@@ -22,7 +22,7 @@ A local companion for Codex and Claude Code: find sessions across projects, insp
 
 ### [Recorded routing study](https://github.com/m-sanchez/routing-study#the-real-model-arm)
 
-In one recorded comparison using Claude Haiku 4.5, domain-specific prompting reduced accuracy from 82.75% to 67.75%. The 400 scored questions contain 372 distinct questions. The transcript and replay are public; this result does not establish that routing fails generally.
+In one recorded comparison using Claude Haiku 4.5, domain-specific prompts scored 67.75% against 82.75% for a generalist prompt under strict first-token scoring, the rule registered before the run. Every question the domain prompts lost under that rule was a format failure: the reply showed its working first, stopped at the 256-token limit, or answered "No." with a full stop. None was a finished wrong answer. Scored on final answers, a rule chosen after reading the replies, the domain prompts scored 91% and the generalist 88%, and the difference was not significant (exact McNemar p=0.14). One model, 400 questions (372 distinct) and one recording: this is not evidence about routing in general. [Read the re-score analysis](https://github.com/m-sanchez/routing-study#re-scoring-the-real-model-arm-what-the-strict-scorer-measured).
 
 ## Inspect and reproduce
 
@@ -30,7 +30,7 @@ In one recorded comparison using Claude Haiku 4.5, domain-specific prompting red
 | --- | --- |
 | Calibration Explorer | [Tagged source, setup, reference provenance, and replay instructions](https://github.com/m-sanchez/calibration-explorer/tree/v0.2.0) |
 | calibrated | [Numerical corrections and distribution status for v2.0.1](https://github.com/m-sanchez/calibrated/releases/tag/v2.0.1) |
-| Routing study | [Recorded model transcript and replay](https://github.com/m-sanchez/routing-study#the-real-model-arm), alongside a separately labelled synthetic study |
+| Routing study | [Recorded model transcript and replay](https://github.com/m-sanchez/routing-study#the-real-model-arm) under the registered scorer, a [post-hoc final-answer re-score](https://github.com/m-sanchez/routing-study#re-scoring-the-real-model-arm-what-the-strict-scorer-measured) of the same transcript, and a separately labelled synthetic study |
 | Careful Machine | [Public reference implementation](https://github.com/m-sanchez/careful-machine-reference) and [interactive evidence demo](https://miguelsanchez.co.uk/careful-machine/) |
 
 The Careful Machine repository illustrates an approach with public reference code and synthetic examples. It is not my employer's production system. Reproducing recorded output establishes repeatability; correctness and generalisation need additional evidence.
